@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+
+<bean id="author" class="com.reetu.beans.Author">
+
+<property value="Reetu Chauhan" name="name"/>
+
+<property value="9898989898" name="phone"/>
+
+<property value="20" name="age"/>
+
+</bean>
+
+
+<bean id="book" class="com.reetu.beans.JavaBook">
+
+<property value="Core Java" name="name"/>
+
+<property value="1200" name="price"/>
+
+<property name="author" ref="author"/>
+
+</bean>
+
+</beans>
